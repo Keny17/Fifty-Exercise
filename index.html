@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!--<script src='main.js' type = "text/javascript"></script>-->
+    
+    <!--<link rel='stylesheet' type='text/css' media='screen' href='main.css'>-->
+
+    <title>Exercises</title>
+
+    
+</head>
+<body>
+
+    <h1>Prospercity Exercices</h1>
+
+    <!-- Script para delimitar el numero mayor de 3 variables -->
+
+    <script>
+
+    let num1 = 4, num2 = 9, num3 = 11;
+    let mayor;
+    document.write("The largest number is:\n ");
+
+    if((num1 >= num2)&&(num1>=num3)){
+
+        document.write(num1);
+    
+    }else if(num2 > num3){
+
+        document.write(num2);
+
+    }else{
+
+        document.write(num3);
+
+    }  
+    
+    </script><br>
+
+        <!-- Script para realizar un descuento a un valor ya definido -->
+
+    <script>
+
+        document.write("\nDiscount System\n");
+        
+        let sale = 6500; discount = 1000;
+
+        document.write("The sale is: " + sale + " The discount is: " + discount + "\n");
+
+        if(sale > discount){
+
+            document.write("The value to pay is: "+ (sale-discount) + "\n");
+
+        }else {
+
+            document.write("You cannot discount this purchase \n");
+
+        }
+
+
+    </script><br>
+
+    <!-- Script para contar cuantos numeros hay entre dos un rango -->
+
+    <script>
+
+        //Declaración de variables
+        
+        let number1 = 4; number2 = 8, amount = 0;
+        
+        //Comparativa: el numero uno debe ser mayor al numero dos
+        if(number1<number2){
+
+        //Iterar mientras sea iguala el numero dos en valor 
+        for(i=number1;i<=number2;i++){
+
+            amount++;
+
+        }
+
+        document.write("The amount of numbers is: "+ amount + "\n");
+
+    }else{
+
+        document.write("Number one must be greater than number two \n");
+    }
+
+    </script><br>
+
+    <!-- Script para elegir que vamos a desayunar de el menu el dia -->
+
+    <script>
+
+    document.write("Select one option \n");
+    document.write("What do you do for breakfast today? \n");
+
+    let choiced;
+    
+    //Pregunta la opción a elegir
+    choiced=prompt('What would you like to drink \n 1-Coffe\n 2-Chocolate\n 3-Natural Juice\n');
+    
+    //Imprime la opcione elegida
+    switch(choiced){
+
+        case  '1' :
+            document.write("Your drink Coffee \n");
+        break;
+
+        case  '2' :
+            document.write("Your drink Chocolate \n");
+        break;
+
+        case  '3' :
+            document.write("Your drink Natural Juice \n");
+        break;
+
+        default : 
+            document.write("You did not choose a valid option \n");
+        break;
+
+    }
+
+    </script><br>
+
+    <!--Script almacenar un directorio telefonico-->
+
+    <script>
+        
+        //Defino el arreglo y las variables de los datos
+        let users = [];
+        let name, phoneNumber, mail;
+
+        //Solicito la informacion almaceno en variable y la traslado al final del vector con .push
+        name = prompt('What is your name?\n');
+        users.push(name);
+        phoneNumber = prompt('What is your phone number?\n');
+        users.push(phoneNumber);
+        mail = prompt('What is your mail?\n');
+        users.push(mail);
+
+        document.write("User one: "+ users[0] +" "+ users[1] +" "+ users[2]);
+
+
+    </script><br>
+
+    <!--Script que permite el paso de un vehiculo siempre y cuando realice el pago-->
+
+    <script>
+
+        let cost;
+        document.write("You must pay 20 dollars to continue ")
+        cost=prompt('How much will you pay?');
+
+        if(cost == 20){
+
+            document.write("You can continue have a good trip");
+
+        }else{
+
+            document.write("Cannot continue the value is incorrect");
+
+        }
+
+    </script><br>
+
+
+
+<!--<button type="button" onclick="largestNumber(2,10,8)">beginning</button>-->  
+
+
+</body>
+</html>
