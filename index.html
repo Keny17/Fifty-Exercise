@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -8,40 +8,54 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
 
     <title>Fifty-Exercises</title>
-
     
 </head>
 <body>
 
-    <h1>Prospercity Exercices</h1>
+    <main>
 
-    <!-- 1-Script para delimitar el numero mayor de 3 variables -->
+        <h1>Prospercity Exercices</h1>
 
-    <script>
+     <!-- 1-Script para delimitar el numero mayor de 3 variables -->
 
-    let num1 = 4, num2 = 9, num3 = 11;
-    let mayor;
-    document.write("The largest number is:\n ");
+     <form action="" class="principalForm">
 
-    if((num1 >= num2)&&(num1>=num3)){
+         <span>Digite un numero</span><br>
+         <!-- <label for="Exercices1"></label>-->
+         <input type="number" name="num1"><br>
+         <span>Digite un numero</span><br>
+         <input type="number" name="num2"><br>
+         <span>Digite un numero</span><br>
+         <input type="number" name="num3"><br>
+        
+        <button type="button" onclick="">Continue</button><br>
+     </form>
+
+     <script id = "largestnum">
+
+     let num1 = 4, num2 = 9, num3 = 11;
+     let mayor;
+     document.write("The largest number is:\n ");
+
+     if((num1 >= num2)&&(num1>=num3)){
 
         document.write(num1);
     
-    }else if(num2 > num3){
+     }else if(num2 > num3){
 
         document.write(num2);
 
-    }else{
+     }else{
 
         document.write(num3);
 
-    }  
+     }  
     
-    </script><br>
+     </script><br>
 
         <!-- Script para realizar un descuento a un valor ya definido -->
 
-    <script>
+     <script>
 
         document.write("\nDiscount System\n");
         
@@ -60,11 +74,11 @@
         }
 
 
-    </script><br>
+     </script><br>
 
-    <!--2- Script para contar cuantos numeros hay entre dos un rango -->
+     <!--2- Script para contar cuantos numeros hay entre dos un rango -->
 
-    <script>
+     <script>
 
         //Declaración de variables
         
@@ -82,27 +96,27 @@
 
         document.write("The amount of numbers is: "+ amount + "\n");
 
-    }else{
+     }else{
 
         document.write("Number one must be greater than number two \n");
-    }
+     }
 
-    </script><br>
+     </script><br>
 
-    <!--3- Script para elegir que vamos a desayunar de el menu el dia -->
+     <!--3- Script para elegir que vamos a desayunar de el menu el dia -->
 
-    <script>
+     <script>
 
-    document.write("Select one option \n");
-    document.write("What do you do for breakfast today? \n");
+     document.write("Select one option \n");
+     document.write("What do you do for breakfast today? \n");
 
-    let choiced;
+     let choiced;
     
-    //Pregunta la opción a elegir
-    choiced=prompt('What would you like to drink \n 1-Coffe\n 2-Chocolate\n 3-Natural Juice\n');
+     //Pregunta la opción a elegir
+     choiced=prompt('What would you like to drink \n 1-Coffe\n 2-Chocolate\n 3-Natural Juice\n');
     
-    //Imprime la opcion elegida
-    switch(choiced){
+     //Imprime la opcion elegida
+     switch(choiced){
 
         case  '1' :
             document.write("Your drink Coffee \n");
@@ -120,13 +134,13 @@
             document.write("You did not choose a valid option \n");
         break;
 
-    }
+     }
 
-    </script><br>
+     </script><br>
 
-    <!--4-Script almacenar un directorio telefonico-->
+     <!--4-Script almacenar un directorio telefonico-->
 
-    <script>
+     <script>
         
         //Defino el arreglo y las variables de los datos
         let users = [];
@@ -143,11 +157,11 @@
         document.write("User one: "+ users[0] +" "+ users[1] +" "+ users[2]);
 
 
-    </script><br>
+     </script><br>
 
-    <!--5-Script que permite el paso de un vehiculo siempre y cuando realice el pago-->
+     <!--5-Script que permite el paso de un vehiculo siempre y cuando realice el pago-->
 
-    <script>
+     <script>
 
         let cost;
         document.write("You must pay 20 dollars to continue ")
@@ -163,11 +177,11 @@
 
         }
 
-    </script><br>
+     </script><br>
 
-    <!--6-Script que permite saber si puedes ingresar a la discoteca-->
+     <!--6-Script que permite saber si puedes ingresar a la discoteca-->
 
-    <script>
+     <script>
 
         let age = 18;
 
@@ -181,8 +195,9 @@
 
         }
 
+     </script>
 
-    </script>
+    </main>    
 
 
 <!--<button type="button" onclick="largestNumber(2,10,8)">beginning</button>-->  
