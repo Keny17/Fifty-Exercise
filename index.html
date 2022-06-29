@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <!--<script src='main.js' type = "text/javascript"></script>-->
+    <script src='main.js' type = "text/javascript"></script>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
 
     <title>Fifty-Exercises</title>
@@ -17,7 +17,7 @@
         <h1>Prospercity Exercices</h1>
 
      <!-- 1-Script para delimitar el numero mayor de 3 variables -->
-
+     <div id="principalForm">
      <form action="" class="principalForm">
 
          <span>Digite un numero</span><br>
@@ -28,10 +28,12 @@
          <span>Digite un numero</span><br>
          <input type="number" name="num3"><br>
         
-        <button type="button" onclick="">Continue</button><br>
+        <button type="button" onclick="largestnumber()">Continue</button><br>
      </form>
+     </div>
 
-     <script id = "largestnum">
+     <div id = "largestnum">
+     <script>
 
      let num1 = 4, num2 = 9, num3 = 11;
      let mayor;
@@ -51,11 +53,13 @@
 
      }  
     
-     </script><br>
+     </script>
+     </div>
+     <br>
 
         <!-- Script para realizar un descuento a un valor ya definido -->
 
-     <script>
+     <br><script>
 
         document.write("\nDiscount System\n");
         
@@ -78,7 +82,7 @@
 
      <!--2- Script para contar cuantos numeros hay entre dos un rango -->
 
-     <script>
+     <br><script>
 
         //Declaración de variables
         
@@ -105,7 +109,7 @@
 
      <!--3- Script para elegir que vamos a desayunar de el menu el dia -->
 
-     <script>
+     <br><script>
 
      document.write("Select one option \n");
      document.write("What do you do for breakfast today? \n");
@@ -140,7 +144,7 @@
 
      <!--4-Script almacenar un directorio telefonico-->
 
-     <script>
+     <br><script>
         
         //Defino el arreglo y las variables de los datos
         let users = [];
@@ -161,7 +165,7 @@
 
      <!--5-Script que permite el paso de un vehiculo siempre y cuando realice el pago-->
 
-     <script>
+     <br><script>
 
         let cost;
         document.write("You must pay 20 dollars to continue ")
@@ -171,9 +175,13 @@
 
             document.write("You can continue have a good trip");
 
+        }else if(cost > 20){
+
+            document.write("Lets Go!!, your change is " + (cost-20));
+
         }else{
 
-            document.write("Cannot continue the value is incorrect");
+            document.write("Cannot continue, the value is incorrect");
 
         }
 
@@ -181,7 +189,7 @@
 
      <!--6-Script que permite saber si puedes ingresar a la discoteca-->
 
-     <script>
+     <br><script>
 
         let age = 18;
 
@@ -195,7 +203,68 @@
 
         }
 
-     </script>
+     </script><br>
+
+     <!--7-Script para jugar piedra papel y tijera-->
+
+     <br><script>
+
+     var stone = "stone";
+     var paper = "paper";
+     var scissor = "scissor";
+
+     var result = function(user, cpu){
+       if(user != cpu){
+         if(user === stone && cpu === scissor){
+                document.write("The user WIN with "+ stone)
+             }else if(user === paper && cpu === stone){
+                document.write( "The user WIN with " + paper)
+             }else if(user === scissor && cpu === paper){
+                document.write("The user WIN with " + scissor)
+          }else{
+            document.write("You Lost!!, Game Over")
+          }
+        }else if(user === cpu){
+            document.write("Tie")
+        }
+       };
+
+       choiced=prompt('Choose yor opption \n 1-Stone\n 2-Paper\n 3-Scissor\n');
+       String(choiced);
+       var choice = choiced.toLowerCase();
+       result(choice,stone);
+
+     </script><br>
+
+     <!--8 Script que guarde 5 tipos de auto con sus repectivos detalles-->
+        
+    <div>
+        <br><script>
+
+            function car (brand,model,year){
+                this.brand = brand;
+                this.model = model;
+                this.year = year;
+            }
+    
+            var cars = [];
+    
+            for(let i = 0 ; i < 1 ; i++){
+            var brand = prompt("What is the brand of the car");
+            var model = prompt("What is the model of the car");
+            var year = prompt("What is the year of the car");
+            var newCar = new car(brand,model,year);
+            cars.push(newCar);
+            }
+    
+            for(let i = 0 ; i < cars.length ; i++){
+                document.write(cars);
+            }
+    
+        </script><br>
+
+    </div>
+        
 
     </main>    
 

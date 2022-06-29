@@ -1,19 +1,22 @@
 * {
-  padding: auto;
-  margin: auto;
-  box-sizing: border-box;  
+  padding: 1 rem;
+  margin: 1 rem;
+  box-sizing: border-box;
 }
 
 html {
+  height: auto;
+  width: 100%;
   background: linear-gradient(to bottom right, #90fffb, rgb(246, 208, 82));
-  text-align: center;
-}
+  display: flex;
+  flex-wrap: wrap;
+  }
 
 h1 {
-  color: black;
+  color: rgb(0, 0, 0);
   text-align: center;
-  padding: 1rem;
-  font-size: 2rem;
+  padding: 6rem;
+  font-size: 3rem;
   font-family: cursive;
 }
 
@@ -22,10 +25,19 @@ main {
 }
 
 p {
-  font-family: verdana;
+  font-family: serif;
   font-size: 20px;
 }
 
-form{
-  padding: 2rem;
+#principalForm{
+  padding: 0.5rem;
+  border: 1rem;
+  align-content: center;
+  width: 50%;
+}
+
+#largestnum{
+  padding: 1rem;
+  border: 1rem chocolate;
+
 }
