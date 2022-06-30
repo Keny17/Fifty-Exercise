@@ -1,43 +1,54 @@
 * {
-  padding: 1 rem;
-  margin: 1 rem;
-  box-sizing: border-box;
+  padding: 0px;
+  font-size: 62.5%;
 }
 
-html {
+body {
   height: auto;
-  width: 100%;
+  width: auto;
   background: linear-gradient(to bottom right, #90fffb, rgb(246, 208, 82));
-  display: flex;
-  flex-wrap: wrap;
   }
 
 h1 {
-  color: rgb(0, 0, 0);
-  text-align: center;
-  padding: 6rem;
-  font-size: 3rem;
-  font-family: cursive;
-}
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 5rem;
+    font-family: cursive;
+    justify-content: center;
+    
+  }
 
 main {
-  padding: 1.6rem;
+    font-size: 1.6rem;
+    display: grid;
+    grid-template-columns:500px 500px;
+    grid-auto-rows: 200px 200px;
+    place-items: center;
+    border: 2px solid black;
+  }
+
+.principalForm{
+  border: 3.5px solid white;
+  padding: 5px 5px 5px 5px;
+      
 }
 
-p {
-  font-family: serif;
-  font-size: 20px;
+.largestnum{
+  font-size: 1.6rem;
+  border: 3.5px solid white;
+  padding: 5px 5px 5px 5px;
+  
 }
 
-#principalForm{
-  padding: 0.5rem;
-  border: 1rem;
-  align-content: center;
-  width: 50%;
+.exercises{
+  font-size: 1.6rem;
+  border: 3.5px solid white;
+  padding: 5px 5px 5px 5px;
+  
 }
 
-#largestnum{
-  padding: 1rem;
-  border: 1rem chocolate;
-
+.carBrand{
+  font-size: 1.6rem;
+  border: 3.5px solid white;
+  padding: 5px 5px 5px 5px;
 }
