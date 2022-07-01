@@ -27,7 +27,7 @@ const  worldChange = ('I love you');
 
 function worldChange(sentence){
 
-sentence.toUpperCase()
+return sentence.toUpperCase()
 
 }
 
